@@ -1,0 +1,164 @@
+:root {
+  --primary:rgb(27, 154, 107);
+  --error: rgb(220, 32, 88);
+  --bg: rgb(240, 240, 240);
+}
+
+body {
+  background-color: var(--bg);
+  color: #333;
+  margin: 0;
+  font-family:'Arial', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: small; 
+    font-weight: lighter;
+}
+ 
+.pages {
+  margin: 0px auto;
+  max-width: 1400px;
+  padding: 20px;
+}
+
+.navbar{
+  background-color: white;
+}
+
+.nav-container {
+  padding: 10px 20px;
+  margin: 0px auto;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 100px;
+}
+
+.workout-details {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgb(0,0,0,0.05);
+}
+
+.workout-details  {
+  position: relative;
+  font-size: small; 
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.workout-details span {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: var(--bg);
+}
+
+.trashicon {
+  font-size: 1.1rem;
+ }
+
+.workout-details h3 {
+  font-weight: bolder;
+  color: var(--primary);
+}
+
+.workout-form {
+  text-align: left;
+  padding-right: 20px;
+ }
+
+.workout-form h2 {
+  margin-bottom: 20px;
+}
+
+.div-error {
+  background-color: rgb(247, 218, 227);
+  color: var(--error);
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+label, input {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ .workout-form input {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+ }
+
+ .workout-form button { 
+    background-color: var(--primary);
+    border-radius: 3px;
+    color: white;
+    padding: 8px;
+    border: none;
+ }
+
+ .error {
+  border: 1px solid var(--error);
+  width: 100%;
+ }
+
+ /*authentication phase*/
+
+ .navbar nav a {
+    margin-right: 20px;
+ }
+
+ .login-form , .signup-form  {
+  padding: 30px;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 8px;
+ }
+
+.login-form input, .signup-form input {
+  margin-bottom: 20px;
+  border-radius: 3px;
+  padding: 5px;
+  border: 2px solid var(--bg);
+}
+
+.logout {
+  color: var(--primary);
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  margin-left: 20px;
+  padding: 8px;
+}
+
+.login-form button, .signup-form button{
+  background-color: var(--primary);
+  border-radius: 3px;
+  color: white;
+  padding: 8px;
+  border: none;
+}
